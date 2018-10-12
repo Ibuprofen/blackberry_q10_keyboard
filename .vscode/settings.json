@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.osx": {
+        "PATH": "/Users/tony/.platformio/penv/bin:/Users/tony/.platformio/penv:/Users/tony/.rbenv/bin:/Users/tony/.nvm/versions/node/v8.11.2/bin:/Users/tony/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PLATFORMIO_CALLER": "vscode"
+    }
+}
