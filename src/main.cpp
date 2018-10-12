@@ -160,16 +160,17 @@ void loop() {
     if (key != NO_KEY) {
         Serial.println(key);
 
-        // basic cursor position
+        int x = 0, y = 0;
+
+        // basic cursor positioning
         if (pos == LCDROWS * LCDCOLS) {
             pos = 0;
             clearBuf();
-            buf[0][0] = key;
         } else {
-            int x = pos / LCDCOLS;
-            int y = pos % LCDCOLS;
-            buf[x][y] = key;
+            x = pos / LCDCOLS;
+            y = pos % LCDCOLS;
         }
+        buf[x][y] = key;
         ++pos;
 
         u8g2.firstPage();
